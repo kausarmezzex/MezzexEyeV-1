@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 	<PropertyGroup>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
-
+		<TargetFrameworks>$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<OutputType>Exe</OutputType>
 		<RootNamespace>MezzexEyeV_1</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -11,7 +10,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Windows platform version -->
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
 		<GenerateAppInstallerFile>True</GenerateAppInstallerFile>
 		<AppxPackageSigningEnabled>False</AppxPackageSigningEnabled>
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
@@ -24,7 +23,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon.svg" Color="#512BD4" />
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 		<!-- Images -->
@@ -58,9 +57,7 @@
 		<PackageReference Include="System.Management" Version="8.0.0" />
 		<PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
 		<PackageReference Include="TimeZoneConverter" Version="6.1.0" />
-		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230902000" />
-
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230902001" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-
 	</ItemGroup>
 </Project>

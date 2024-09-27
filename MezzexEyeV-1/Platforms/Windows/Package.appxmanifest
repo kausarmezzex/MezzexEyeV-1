@@ -8,7 +8,7 @@
   xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"
   IgnorableNamespaces="uap rescap iot uap4">
 
-	<Identity Name="maui-package-name-placeholder" Publisher="CN=User Name" Version="0.0.0.0" />
+	<Identity Name="maui-package-name-placeholder" Publisher="CN=Direct1" Version="1.0.2.0" />
 
 	<mp:PhoneIdentity PhoneProductId="5A4EE2BE-B5F8-4AF9-9F72-47A7CD59D303" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
